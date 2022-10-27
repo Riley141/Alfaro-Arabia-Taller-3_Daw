@@ -9,35 +9,33 @@
     <title></title>
     
 </head>
-<body>
-   <h2>Registrar tarjeta:</h2>
-    
-    <input class="input" type="text" id="Entidad" placeholder="Nombre de la entidad">
-    <input class="input" type="text" id="TipoTarjeta" placeholder="Tipo de tarjeta">
-    <input class="input" type="text" id="NumeroTargeta" placeholder="Numero de la tarjeta">
-    <input class="input" type="text" id="Caducidad" placeholder="Fecha de caducidad">
-    <input class="input" type="text" id="Monto" placeholder="Monto">
-    <input class="input" type="text" id="FechaCorte" placeholder="Fecha de corte">
-    <button class="boton" id="boton">Registrar</button>
-    
-    
-     <table class="tabla" id="lista_de_targetas">
-                <thead>
-                <th>Nombre de la entidad: Oliver Antonio</th>
-                <th>Tipo de tarjeta</th>
-                <br>
-                <th>Numero de la tarjeta: Mastercard</th>
-                <br>
-                <th>Fecha de caducidad: 27/03/22</th>
-                <th>Monto</th>
-                <br>
-                <th>Fecha de corte 30/10/22</th>
-                <br>
-                </thead>
-                <tbody>
-       </tbody>
-            </table><br><br>
+<body bgcolor="6B9CA7">
 
+   <center><h2>Registrar tarjeta:</h2></center>
+       
+    <br>
+
+ <center>
+        <div class="contenedor">
+            <h2>Registrar Tarjeta</h2>
+            <form role="form" onsubmit="Enviar(event);">
+                <div class="formCar">
+                    <input type="text" name="Fnombre" id="Fnombre" placeholder="Nombre de la entidad:" required="">
+                </div>
+                <div class="formCar">
+                    <input type="text" name="Fdui" id="Fdui" placeholder="Tipo de tarjeta" required="">
+                </div>
+                <div class="formCar">
+                    <input type="text" name="Fnit" id="Fnit" placeholder="Numero de la tarjeta:" required="">
+                </div>
+                <div class="formCar">
+                    <input type="text" name="Fnit" id="Fnit" placeholder="Fecha de caducidad:" required="">
+
+                </div>
+
+
+ <br>
+  <h2>Seleccione el Tipo de Tarjeta:</h2>
             <div class="formCar">
                 <select>
                     <option> Visa</option>
@@ -49,6 +47,27 @@
                  
                 </select>
             </div>
+               <br> <button class="boton" id="boton">Registrar</button>
+
+<br>
+ <table class="tabla" id="lista_de_targetas">
+                <thead>
+                <th>Nombre de la entidad: Oliver Antonio</th>
+
+                <th>Tipo de tarjeta</th>
+            
+                <th>Numero de la tarjeta: Mastercard</th>
+                <br>
+                <th>Fecha de caducidad: 27/03/22</th>
+                <th>Monto</th>
+             
+                <th>Fecha de corte 30/10/22</th>
+              
+                </thead>
+                <tbody>
+       </tbody>
+            </table>
+
 </body>
 <footer>
     <script src="Js/Java.js"></script>
